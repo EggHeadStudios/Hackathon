@@ -1,3 +1,2885 @@
 [gd_scene format=3 uid="uid://ct2ed20o1v6mj"]
 
+[ext_resource type="Texture2D" uid="uid://ditgqfgfgbl81" path="res://Assets/floor_1.png" id="1_rwnyu"]
+
 [node name="Node2D" type="Node2D" unique_id=1444331863]
+
+[node name="Floor1" type="Sprite2D" parent="." unique_id=1501641296]
+position = Vector2(18, 113)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1" unique_id=1019148317]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1" unique_id=1457439078]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor2" unique_id=1360262276]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1" unique_id=663755904]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor3" unique_id=1977363762]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor3" unique_id=968122948]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor3/Floor2" unique_id=960763968]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1" unique_id=1615317999]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor4" unique_id=1264132281]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor4" unique_id=1604264333]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor4/Floor2" unique_id=2137681322]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor4" unique_id=1771379462]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor4/Floor3" unique_id=1305543893]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor4/Floor3" unique_id=581457970]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor4/Floor3/Floor2" unique_id=50112093]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1" unique_id=299896876]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5" unique_id=1956064752]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor5" unique_id=179238691]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5/Floor2" unique_id=554184189]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor5" unique_id=214101611]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5/Floor3" unique_id=1887479619]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor5/Floor3" unique_id=1718507442]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5/Floor3/Floor2" unique_id=2102458665]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor5" unique_id=2111966693]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5/Floor4" unique_id=1381835768]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor5/Floor4" unique_id=1405247505]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5/Floor4/Floor2" unique_id=1242287098]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor5/Floor4" unique_id=1523523268]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5/Floor4/Floor3" unique_id=1694224676]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor5/Floor4/Floor3" unique_id=2011319194]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor5/Floor4/Floor3/Floor2" unique_id=1618782064]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1" unique_id=189628546]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6" unique_id=944774175]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6" unique_id=960195736]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor2" unique_id=210010812]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor6" unique_id=1080790548]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor3" unique_id=1545209317]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6/Floor3" unique_id=1273269911]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor3/Floor2" unique_id=1141687429]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor6" unique_id=1511848626]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor4" unique_id=1367936855]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6/Floor4" unique_id=1234549098]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor4/Floor2" unique_id=833011261]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor6/Floor4" unique_id=612915003]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor4/Floor3" unique_id=1332363479]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6/Floor4/Floor3" unique_id=163726110]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor4/Floor3/Floor2" unique_id=817100131]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor6" unique_id=1729351344]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5" unique_id=1761487107]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6/Floor5" unique_id=1847648362]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor2" unique_id=610302587]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor6/Floor5" unique_id=1113014032]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor3" unique_id=626927433]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor3" unique_id=1307750311]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor3/Floor2" unique_id=1295453886]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor6/Floor5" unique_id=1063785249]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor4" unique_id=1490125869]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor4" unique_id=1524505205]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor4/Floor2" unique_id=1872753504]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor4" unique_id=1781884552]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor4/Floor3" unique_id=1702994989]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor4/Floor3" unique_id=509633113]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=208001698]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor7" type="Sprite2D" parent="Floor1" unique_id=587164183]
+position = Vector2(0, 127)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7" unique_id=1593960209]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7" unique_id=7500977]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor2" unique_id=1420446795]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7" unique_id=2061342647]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor3" unique_id=89164746]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor3" unique_id=902135959]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor3/Floor2" unique_id=170157212]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor7" unique_id=584454234]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor4" unique_id=303525881]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor4" unique_id=2116698637]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor4/Floor2" unique_id=1380971062]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7/Floor4" unique_id=1780012983]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor4/Floor3" unique_id=1159324380]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor4/Floor3" unique_id=1034568918]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor4/Floor3/Floor2" unique_id=1134837661]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor7" unique_id=1745542430]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5" unique_id=2085083804]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor5" unique_id=400050464]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor2" unique_id=1522631489]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7/Floor5" unique_id=2081559999]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor3" unique_id=1129097413]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor3" unique_id=452353741]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor3/Floor2" unique_id=2037978510]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor7/Floor5" unique_id=1992650329]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor4" unique_id=1019164699]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor4" unique_id=1873504244]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor4/Floor2" unique_id=2111545728]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor4" unique_id=76897871]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor4/Floor3" unique_id=1618382269]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor4/Floor3" unique_id=1461591642]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor5/Floor4/Floor3/Floor2" unique_id=1581432148]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor7" unique_id=1860817983]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6" unique_id=1244272856]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6" unique_id=372843685]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor2" unique_id=1101127323]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7/Floor6" unique_id=146412265]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor3" unique_id=575569222]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor3" unique_id=1217777511]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor3/Floor2" unique_id=979116174]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor7/Floor6" unique_id=1245664550]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor4" unique_id=25748698]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor4" unique_id=1447915180]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor4/Floor2" unique_id=1812711004]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor4" unique_id=1773903664]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor4/Floor3" unique_id=176355984]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor4/Floor3" unique_id=1059974472]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor4/Floor3/Floor2" unique_id=1377549477]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor7/Floor6" unique_id=1216545960]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5" unique_id=305047559]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5" unique_id=1992861232]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor2" unique_id=171788895]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5" unique_id=842154439]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor3" unique_id=1676914737]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor3" unique_id=751888231]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor3/Floor2" unique_id=1488352572]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5" unique_id=710537655]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor4" unique_id=145814520]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor4" unique_id=1819455637]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor4/Floor2" unique_id=951941869]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor4" unique_id=1364645396]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=2013420134]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=1901419584]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor7/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1986437603]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor8" type="Sprite2D" parent="Floor1" unique_id=829914293]
+position = Vector2(510, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8" unique_id=1138888401]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8" unique_id=1797112183]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor2" unique_id=329577607]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8" unique_id=1144790008]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor3" unique_id=2066168373]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor3" unique_id=377760265]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor3/Floor2" unique_id=159339553]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8" unique_id=1145307109]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor4" unique_id=750241841]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor4" unique_id=1445754630]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor4/Floor2" unique_id=73414501]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor4" unique_id=551945763]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor4/Floor3" unique_id=350336467]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor4/Floor3" unique_id=985469856]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor4/Floor3/Floor2" unique_id=200068725]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor8" unique_id=1151704870]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5" unique_id=1127977982]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor5" unique_id=2133459077]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor2" unique_id=145834523]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor5" unique_id=1566808175]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor3" unique_id=2005980092]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor3" unique_id=1000470275]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor3/Floor2" unique_id=1774031526]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8/Floor5" unique_id=66358102]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor4" unique_id=1099876211]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor4" unique_id=176499080]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor4/Floor2" unique_id=254906364]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor4" unique_id=809744191]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor4/Floor3" unique_id=1158723637]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor4/Floor3" unique_id=143828441]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor5/Floor4/Floor3/Floor2" unique_id=933573465]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor8" unique_id=1624067752]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6" unique_id=861027346]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6" unique_id=1885708655]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor2" unique_id=649263008]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor6" unique_id=1186635768]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor3" unique_id=129209186]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor3" unique_id=1774386966]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor3/Floor2" unique_id=890805273]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8/Floor6" unique_id=1034448542]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor4" unique_id=321436440]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor4" unique_id=2138118533]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor4/Floor2" unique_id=2097261250]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor4" unique_id=352010074]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor4/Floor3" unique_id=1406739615]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor4/Floor3" unique_id=825902233]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor4/Floor3/Floor2" unique_id=956550394]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor8/Floor6" unique_id=1143117052]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5" unique_id=968383480]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5" unique_id=1253715489]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor2" unique_id=274344618]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5" unique_id=2129502911]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor3" unique_id=599289163]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor3" unique_id=1920641456]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor3/Floor2" unique_id=1185914698]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5" unique_id=1705734144]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor4" unique_id=706812884]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor4" unique_id=65249976]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor4/Floor2" unique_id=1780528328]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor4" unique_id=1672823754]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor4/Floor3" unique_id=1203616124]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor4/Floor3" unique_id=832438572]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1407901182]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor7" type="Sprite2D" parent="Floor1/Floor8" unique_id=1047516912]
+position = Vector2(0, 127)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7" unique_id=2142265970]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7" unique_id=1625715877]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor2" unique_id=2009554892]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7" unique_id=1102561345]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor3" unique_id=1100459034]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor3" unique_id=96704563]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor3/Floor2" unique_id=301981668]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8/Floor7" unique_id=1663229048]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor4" unique_id=790092208]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor4" unique_id=1791338441]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor4/Floor2" unique_id=754834220]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor4" unique_id=463039141]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor4/Floor3" unique_id=1788253934]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor4/Floor3" unique_id=2125484707]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor4/Floor3/Floor2" unique_id=920379304]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor8/Floor7" unique_id=1267971293]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5" unique_id=319545703]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5" unique_id=380733859]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor2" unique_id=569914936]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5" unique_id=212045792]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor3" unique_id=1226450594]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor3" unique_id=2051021458]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor3/Floor2" unique_id=364826750]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5" unique_id=1771781223]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor4" unique_id=582770137]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor4" unique_id=1665381239]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor4/Floor2" unique_id=1334625199]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor4" unique_id=679485659]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor4/Floor3" unique_id=154768170]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor4/Floor3" unique_id=2054452373]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor5/Floor4/Floor3/Floor2" unique_id=402614853]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor8/Floor7" unique_id=1668836521]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6" unique_id=1120044249]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6" unique_id=1396830766]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor2" unique_id=1007077552]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6" unique_id=2054543429]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor3" unique_id=1869861349]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor3" unique_id=506628773]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor3/Floor2" unique_id=657586141]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6" unique_id=1800648370]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor4" unique_id=2145695563]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor4" unique_id=601478214]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor4/Floor2" unique_id=39379251]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor4" unique_id=1486804335]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor4/Floor3" unique_id=2017027494]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor4/Floor3" unique_id=1599429663]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor4/Floor3/Floor2" unique_id=964004469]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6" unique_id=995823662]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5" unique_id=1253991870]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5" unique_id=589926402]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor2" unique_id=195064416]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5" unique_id=673950839]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor3" unique_id=1170712548]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor3" unique_id=1652691599]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor3/Floor2" unique_id=53831045]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5" unique_id=373113225]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor4" unique_id=2003098347]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor4" unique_id=1733297673]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor4/Floor2" unique_id=1483033192]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor4" unique_id=1499172747]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=1380316443]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=1761918195]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor8/Floor7/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1190706353]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor9" type="Sprite2D" parent="Floor1" unique_id=2051535377]
+position = Vector2(0, 255)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9" unique_id=519110964]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9" unique_id=1404610167]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor2" unique_id=676954763]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9" unique_id=1174718429]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor3" unique_id=1715195403]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor3" unique_id=680849851]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor3/Floor2" unique_id=1179293831]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9" unique_id=794262166]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor4" unique_id=2147307699]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor4" unique_id=1292792912]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor4/Floor2" unique_id=1919581781]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor4" unique_id=632794596]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor4/Floor3" unique_id=1294646540]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor4/Floor3" unique_id=2037329145]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor4/Floor3/Floor2" unique_id=99106946]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9" unique_id=926657890]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5" unique_id=954935636]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor5" unique_id=515548074]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor2" unique_id=1772572104]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor5" unique_id=1264812350]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor3" unique_id=1270671161]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor3" unique_id=1624736665]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor3/Floor2" unique_id=1203142731]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor5" unique_id=201010492]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor4" unique_id=890267578]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor4" unique_id=775570532]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor4/Floor2" unique_id=81538966]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor4" unique_id=1630888528]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor4/Floor3" unique_id=762862109]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor4/Floor3" unique_id=1181212369]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor5/Floor4/Floor3/Floor2" unique_id=1519660869]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor9" unique_id=1107540093]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6" unique_id=304478907]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6" unique_id=1093551653]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor2" unique_id=349547302]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor6" unique_id=2102315090]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor3" unique_id=473683618]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor3" unique_id=942185719]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor3/Floor2" unique_id=1516096526]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor6" unique_id=584299603]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor4" unique_id=946593311]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor4" unique_id=874071952]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor4/Floor2" unique_id=427351085]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor4" unique_id=970142620]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor4/Floor3" unique_id=231732264]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor4/Floor3" unique_id=1858400762]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor4/Floor3/Floor2" unique_id=111545441]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor6" unique_id=1397100402]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5" unique_id=2134703368]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5" unique_id=1220262767]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor2" unique_id=384344392]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5" unique_id=1541466906]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor3" unique_id=386059318]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor3" unique_id=1870669548]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor3/Floor2" unique_id=265994587]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5" unique_id=269349652]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor4" unique_id=1983623518]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor4" unique_id=1886558189]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor4/Floor2" unique_id=2067476431]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor4" unique_id=1366891068]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor4/Floor3" unique_id=1481085694]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor4/Floor3" unique_id=323247173]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1921302456]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor7" type="Sprite2D" parent="Floor1/Floor9" unique_id=267722818]
+position = Vector2(0, 127)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7" unique_id=1426209628]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7" unique_id=1994406689]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor2" unique_id=717425976]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7" unique_id=1631900737]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor3" unique_id=1437336582]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor3" unique_id=2070825522]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor3/Floor2" unique_id=1436128132]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor7" unique_id=1262388107]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor4" unique_id=1848859734]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor4" unique_id=913602519]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor4/Floor2" unique_id=1018065189]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor4" unique_id=746128415]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor4/Floor3" unique_id=439075290]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor4/Floor3" unique_id=668208582]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor4/Floor3/Floor2" unique_id=1036755330]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor7" unique_id=1653793574]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5" unique_id=1726667792]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5" unique_id=741219211]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor2" unique_id=1787941457]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5" unique_id=1653463519]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor3" unique_id=1200760096]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor3" unique_id=1804656613]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor3/Floor2" unique_id=1811811594]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5" unique_id=1389022763]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor4" unique_id=2116380457]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor4" unique_id=66536039]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor4/Floor2" unique_id=2125736425]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor4" unique_id=886777455]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor4/Floor3" unique_id=978965258]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor4/Floor3" unique_id=1757185572]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor5/Floor4/Floor3/Floor2" unique_id=1843875275]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor9/Floor7" unique_id=447388469]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6" unique_id=1888683106]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6" unique_id=812296148]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor2" unique_id=544997104]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6" unique_id=1205728613]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor3" unique_id=1592780129]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor3" unique_id=416854355]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor3/Floor2" unique_id=1212635714]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6" unique_id=1921997062]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor4" unique_id=103728070]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor4" unique_id=1659311481]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor4/Floor2" unique_id=1263105799]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor4" unique_id=185018842]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor4/Floor3" unique_id=69885016]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor4/Floor3" unique_id=1554653960]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor4/Floor3/Floor2" unique_id=706291598]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6" unique_id=2094937221]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5" unique_id=516282258]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5" unique_id=460799473]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor2" unique_id=1931737436]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5" unique_id=1984234335]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor3" unique_id=534685523]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor3" unique_id=2060583170]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor3/Floor2" unique_id=1548958799]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5" unique_id=1173344492]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor4" unique_id=380080281]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor4" unique_id=637773101]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor4/Floor2" unique_id=85498523]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor4" unique_id=732424811]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=127419939]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=1520350525]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor7/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1431247110]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor8" type="Sprite2D" parent="Floor1/Floor9" unique_id=2082159933]
+position = Vector2(510, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8" unique_id=847815022]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8" unique_id=255173606]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor2" unique_id=865849477]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8" unique_id=603297218]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor3" unique_id=605168800]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor3" unique_id=455667602]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor3/Floor2" unique_id=1267045055]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8" unique_id=1009369706]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor4" unique_id=1670200096]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor4" unique_id=271259597]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor4/Floor2" unique_id=854552340]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor4" unique_id=535576502]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor4/Floor3" unique_id=2111004092]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor4/Floor3" unique_id=1593384117]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor4/Floor3/Floor2" unique_id=712947803]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor8" unique_id=1958905409]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5" unique_id=1291370492]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5" unique_id=1772091505]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor2" unique_id=470709299]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5" unique_id=1621328587]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor3" unique_id=918636874]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor3" unique_id=1326268583]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor3/Floor2" unique_id=745313913]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5" unique_id=2043600891]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor4" unique_id=1282290421]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor4" unique_id=2046095008]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor4/Floor2" unique_id=1402633121]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor4" unique_id=1322817695]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor4/Floor3" unique_id=846627771]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor4/Floor3" unique_id=1815692863]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor5/Floor4/Floor3/Floor2" unique_id=964707448]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor9/Floor8" unique_id=726614752]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6" unique_id=693571466]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6" unique_id=1540352242]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor2" unique_id=1291996924]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6" unique_id=93213806]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor3" unique_id=1407469202]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor3" unique_id=1009743695]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor3/Floor2" unique_id=179465578]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6" unique_id=1190301799]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor4" unique_id=775076345]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor4" unique_id=1311124807]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor4/Floor2" unique_id=1213742769]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor4" unique_id=214138180]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor4/Floor3" unique_id=579870947]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor4/Floor3" unique_id=276355006]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor4/Floor3/Floor2" unique_id=1066030826]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6" unique_id=1960887186]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5" unique_id=2045594637]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5" unique_id=1527360960]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor2" unique_id=982240066]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5" unique_id=327859544]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor3" unique_id=1435481382]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor3" unique_id=792520145]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor3/Floor2" unique_id=1350355825]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5" unique_id=156155189]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor4" unique_id=945357355]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor4" unique_id=1407100388]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor4/Floor2" unique_id=1703150942]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor4" unique_id=16925133]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor4/Floor3" unique_id=727285349]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor4/Floor3" unique_id=38135707]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1822268461]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor7" type="Sprite2D" parent="Floor1/Floor9/Floor8" unique_id=1362671932]
+position = Vector2(0, 127)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7" unique_id=967511417]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7" unique_id=653743584]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor2" unique_id=216411108]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7" unique_id=1157086950]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor3" unique_id=616059838]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor3" unique_id=69513748]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor3/Floor2" unique_id=1766278126]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7" unique_id=1490461686]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor4" unique_id=190485803]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor4" unique_id=1388736115]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor4/Floor2" unique_id=468074558]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor4" unique_id=1651047900]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor4/Floor3" unique_id=229497319]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor4/Floor3" unique_id=1034088677]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor4/Floor3/Floor2" unique_id=157998220]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7" unique_id=1231785315]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5" unique_id=1727931251]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5" unique_id=1023590163]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor2" unique_id=1062737514]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5" unique_id=1031175494]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor3" unique_id=1364329659]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor3" unique_id=885289996]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor3/Floor2" unique_id=107600951]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5" unique_id=881231510]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor4" unique_id=133923322]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor4" unique_id=660333080]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor4/Floor2" unique_id=897802909]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor4" unique_id=1823551571]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor4/Floor3" unique_id=165561775]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor4/Floor3" unique_id=937807622]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor5/Floor4/Floor3/Floor2" unique_id=37479290]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7" unique_id=633695076]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6" unique_id=1906615464]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6" unique_id=746275891]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor2" unique_id=507881716]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6" unique_id=1862336826]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor3" unique_id=492374172]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor3" unique_id=1653034842]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor3/Floor2" unique_id=1501517085]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6" unique_id=356760182]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor4" unique_id=304344250]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor4" unique_id=1324195026]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor4/Floor2" unique_id=1980679513]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor4" unique_id=353564322]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor4/Floor3" unique_id=655717360]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor4/Floor3" unique_id=1578893901]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor4/Floor3/Floor2" unique_id=1115752698]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6" unique_id=418075114]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5" unique_id=1094585532]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5" unique_id=1983080933]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor2" unique_id=896102847]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5" unique_id=2106178729]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor3" unique_id=48116398]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor3" unique_id=803330269]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor3/Floor2" unique_id=684832198]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5" unique_id=1769468030]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor4" unique_id=1322165535]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor4" unique_id=194966770]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor4/Floor2" unique_id=898716023]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor4" unique_id=1076829120]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=431704132]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=817173384]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor8/Floor7/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1825651184]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor9" type="Sprite2D" parent="Floor1/Floor9" unique_id=784655450]
+position = Vector2(0, 255)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9" unique_id=1675338341]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9" unique_id=932912208]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor2" unique_id=1074366432]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9" unique_id=1367400155]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor3" unique_id=659128583]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor3" unique_id=870048109]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor3/Floor2" unique_id=666531493]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9" unique_id=673229327]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor4" unique_id=1230463625]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor4" unique_id=254436393]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor4/Floor2" unique_id=1773565400]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor4" unique_id=867206034]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor4/Floor3" unique_id=585911241]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor4/Floor3" unique_id=1788043878]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor4/Floor3/Floor2" unique_id=1130604397]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor9" unique_id=1635491476]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5" unique_id=1090650643]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5" unique_id=1522376501]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor2" unique_id=1967193088]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5" unique_id=758342335]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor3" unique_id=1007077230]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor3" unique_id=1196505343]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor3/Floor2" unique_id=1163463564]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5" unique_id=567445595]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor4" unique_id=792882024]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor4" unique_id=1442918435]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor4/Floor2" unique_id=930973601]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor4" unique_id=1088410363]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor4/Floor3" unique_id=809404158]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor4/Floor3" unique_id=1889289380]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor5/Floor4/Floor3/Floor2" unique_id=1821410530]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor9/Floor9" unique_id=2027315843]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6" unique_id=1190694776]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6" unique_id=2014739018]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor2" unique_id=1657335325]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6" unique_id=1427468150]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor3" unique_id=241797633]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor3" unique_id=941984953]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor3/Floor2" unique_id=1672065879]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6" unique_id=1618726319]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor4" unique_id=2066073256]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor4" unique_id=128696698]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor4/Floor2" unique_id=21732718]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor4" unique_id=1762979791]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor4/Floor3" unique_id=1813977484]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor4/Floor3" unique_id=951545619]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor4/Floor3/Floor2" unique_id=1392336825]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6" unique_id=345891759]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5" unique_id=691924547]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5" unique_id=1524418366]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor2" unique_id=1797408608]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5" unique_id=56090266]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor3" unique_id=95542901]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor3" unique_id=1165087082]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor3/Floor2" unique_id=635748471]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5" unique_id=1367338838]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor4" unique_id=657460985]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor4" unique_id=315782833]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor4/Floor2" unique_id=1470677228]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor4" unique_id=961774779]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor4/Floor3" unique_id=1361665415]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor4/Floor3" unique_id=285480533]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=123566868]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor8" type="Sprite2D" parent="Floor1/Floor9/Floor9" unique_id=1049619240]
+position = Vector2(510, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8" unique_id=1948144818]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8" unique_id=403929998]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor2" unique_id=1299626177]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8" unique_id=1674662920]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor3" unique_id=462817415]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor3" unique_id=154547877]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor3/Floor2" unique_id=791472185]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8" unique_id=1734617376]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor4" unique_id=501510662]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor4" unique_id=1129995520]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor4/Floor2" unique_id=374459027]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor4" unique_id=26033362]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor4/Floor3" unique_id=546822066]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor4/Floor3" unique_id=1871704320]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor4/Floor3/Floor2" unique_id=682769913]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8" unique_id=1757181403]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5" unique_id=1330642144]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5" unique_id=865734847]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor2" unique_id=504812443]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5" unique_id=1090199936]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor3" unique_id=128115929]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor3" unique_id=1731558945]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor3/Floor2" unique_id=1058271535]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5" unique_id=1476876767]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor4" unique_id=1891386921]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor4" unique_id=1761049967]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor4/Floor2" unique_id=557839095]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor4" unique_id=689839158]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor4/Floor3" unique_id=1144481334]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor4/Floor3" unique_id=346450385]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor5/Floor4/Floor3/Floor2" unique_id=1794636403]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8" unique_id=1242689888]
+position = Vector2(256, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6" unique_id=692409490]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6" unique_id=1639899474]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor2" unique_id=340350710]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6" unique_id=223810606]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor3" unique_id=484870148]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor3" unique_id=1157718955]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor3/Floor2" unique_id=907281091]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6" unique_id=1490900613]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor4" unique_id=1684202157]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor4" unique_id=32283523]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor4/Floor2" unique_id=863004573]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor4" unique_id=758796053]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor4/Floor3" unique_id=1861861633]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor4/Floor3" unique_id=768324563]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor4/Floor3/Floor2" unique_id=1306594784]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6" unique_id=1867574103]
+position = Vector2(128, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5" unique_id=1381106755]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5" unique_id=1278678345]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor2" unique_id=512201717]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5" unique_id=405979787]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor3" unique_id=2009377237]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor3" unique_id=418363918]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor3/Floor2" unique_id=109151495]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5" unique_id=2043526120]
+position = Vector2(0, -64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor4" unique_id=476772957]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor4" unique_id=1309972235]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor4/Floor2" unique_id=938468864]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor4" unique_id=457215425]
+position = Vector2(0, -32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor4/Floor3" unique_id=1249146504]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor4/Floor3" unique_id=2130347262]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor1" type="Sprite2D" parent="Floor1/Floor9/Floor9/Floor8/Floor6/Floor5/Floor4/Floor3/Floor2" unique_id=1309960493]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="." unique_id=730073144]
+position = Vector2(1040, 17)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2" unique_id=300002201]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2" unique_id=1032921747]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor3" unique_id=1274693141]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2" unique_id=152900428]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor4" unique_id=2112848445]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor4" unique_id=1444015284]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor4/Floor3" unique_id=1473546406]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor2" unique_id=1362163357]
+position = Vector2(0, 64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor5" unique_id=2016443854]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor5" unique_id=1162928954]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor5/Floor3" unique_id=830885779]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor5" unique_id=172958542]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor5/Floor4" unique_id=970311858]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor5/Floor4" unique_id=953881169]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor5/Floor4/Floor3" unique_id=1639739465]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor2" unique_id=1475408690]
+position = Vector2(0, 127)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6" unique_id=1283805391]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor6" unique_id=1686705083]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6/Floor3" unique_id=1090450415]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor6" unique_id=1848792014]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6/Floor4" unique_id=823712459]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor6/Floor4" unique_id=860847771]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6/Floor4/Floor3" unique_id=381127979]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor2/Floor6" unique_id=672495883]
+position = Vector2(0, 64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6/Floor5" unique_id=60377252]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor6/Floor5" unique_id=2111805112]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6/Floor5/Floor3" unique_id=1914693654]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor6/Floor5" unique_id=1356511446]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6/Floor5/Floor4" unique_id=2060695379]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor6/Floor5/Floor4" unique_id=1965680539]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor6/Floor5/Floor4/Floor3" unique_id=452747437]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor7" type="Sprite2D" parent="Floor2" unique_id=316889811]
+position = Vector2(0, 255)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7" unique_id=199061517]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7" unique_id=1505807727]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor3" unique_id=1495580753]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7" unique_id=1996342666]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor4" unique_id=705605773]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor4" unique_id=320491990]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor4/Floor3" unique_id=1006350521]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor2/Floor7" unique_id=2019643945]
+position = Vector2(0, 64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor5" unique_id=1075527673]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor5" unique_id=990223091]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor5/Floor3" unique_id=1778597312]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7/Floor5" unique_id=1228099260]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor5/Floor4" unique_id=572650086]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor5/Floor4" unique_id=2056470407]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor5/Floor4/Floor3" unique_id=603738318]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor6" type="Sprite2D" parent="Floor2/Floor7" unique_id=420887997]
+position = Vector2(0, 127)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6" unique_id=1197343115]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6" unique_id=207971619]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor3" unique_id=352796453]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7/Floor6" unique_id=2080354828]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor4" unique_id=100459156]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor4" unique_id=1120453922]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor4/Floor3" unique_id=297214998]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor5" type="Sprite2D" parent="Floor2/Floor7/Floor6" unique_id=1502144113]
+position = Vector2(0, 64)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5" unique_id=1376458534]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5" unique_id=1589026569]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor3" unique_id=1842061390]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5" unique_id=1944842605]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4" unique_id=2013713326]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4" unique_id=1543244201]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor3" unique_id=2044971277]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4" unique_id=493883840]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4" unique_id=1702188225]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4" unique_id=253761082]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor3" unique_id=548339060]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4" unique_id=1911427557]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4" unique_id=1983184467]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4" unique_id=1615590857]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor3" unique_id=1325731017]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4" unique_id=1675228552]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor4" unique_id=1998158781]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor4" unique_id=355373994]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor4/Floor3" unique_id=697454524]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor4" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor4" unique_id=1934024634]
+position = Vector2(0, 32)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor4/Floor4" unique_id=170852139]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor3" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor4/Floor4" unique_id=1643219843]
+position = Vector2(64, 0)
+texture = ExtResource("1_rwnyu")
+
+[node name="Floor2" type="Sprite2D" parent="Floor2/Floor7/Floor6/Floor5/Floor4/Floor4/Floor4/Floor4/Floor4/Floor3" unique_id=1638849625]
+position = Vector2(32, 0)
+texture = ExtResource("1_rwnyu")
