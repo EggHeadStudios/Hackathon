@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://da4ryq8h5la5t"]
+
+[ext_resource type="Script" uid="uid://tnxibthiu8y2" path="res://Enemies/test_player.gd" id="1_i3dmm"]
+[ext_resource type="Texture2D" uid="uid://b1anm81434fye" path="res://Assets/king_down_1.png" id="2_yg6kn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t8uwx"]
+
+[node name="TestPlayer" type="CharacterBody2D" unique_id=573845986]
+script = ExtResource("1_i3dmm")
+
+[node name="KingDown1" type="Sprite2D" parent="." unique_id=2074424252]
+z_index = 4096
+texture = ExtResource("2_yg6kn")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1924628799]
+zoom = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1156500922]
+shape = SubResource("CapsuleShape2D_t8uwx")
