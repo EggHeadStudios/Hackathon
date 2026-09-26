@@ -17,11 +17,21 @@ func _physics_process(delta: float) -> void:
 	
 	if sidewaysMovement:
 		velocity.x = sidewaysMovement * SPEED
+		if velocity.x > 0:
+			$PlayerSprite.texture = load ("res://Assets/king_side_1.png")
+			$PlayerSprite.flip_h = true
+		else:
+			$PlayerSprite.texture = load ("res://Assets/king_side_1.png")
+			$PlayerSprite.flip_h = false
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 	if verticalMovement:
 		velocity.y = verticalMovement * SPEED
+		if velocity.y > 0:
+			$PlayerSprite.texture = load ("res://Assets/king_down_1.png")
+		else:
+			$PlayerSprite.texture = load ("res://Assets/king_up_1.png")
 	else:
 		velocity.y = move_toward(velocity.x, 0, SPEED)
 
