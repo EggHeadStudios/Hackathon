@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://dylrv4uv1kq2j"]
 
+[ext_resource type="Script" uid="uid://rh03nhd52yic" path="res://camera_2d.gd" id="1_hf3nf"]
 [ext_resource type="Texture2D" uid="uid://bpic18s0aimfi" path="res://icon.svg" id="1_jmugw"]
+[ext_resource type="Texture2D" uid="uid://dpi533dclctvl" path="res://Assets/floor_tile_1.png" id="2_hf3nf"]
+[ext_resource type="Script" uid="uid://6dkp3j1xbvu4" path="res://button.gd" id="4_08a7v"]
+[ext_resource type="Script" uid="uid://dswo544vprace" path="res://menu_button.gd" id="5_55kc7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf3nf"]
 texture = ExtResource("1_jmugw")
@@ -26,8 +30,45 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_hf3nf")
 
+[sub_resource type="Theme" id="Theme_jmugw"]
+default_font_size = 12
+
 [node name="Base" type="Node2D" unique_id=1208199025]
 scale = Vector2(100, 100)
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=486412478]
+script = ExtResource("1_hf3nf")
+
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=511906701]
 tile_set = SubResource("TileSet_iyn1a")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=317774262]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1390332162]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu Button" type="Button" parent="CanvasLayer/CenterContainer" unique_id=767644210]
+layout_mode = 2
+tooltip_text = "Press to Start!"
+theme = SubResource("Theme_jmugw")
+theme_override_font_sizes/font_size = 15
+text = "Push me!!"
+icon = ExtResource("2_hf3nf")
+icon_alignment = 1
+script = ExtResource("4_08a7v")
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer2" type="CenterContainer" parent="CanvasLayer" unique_id=500003449]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Popup" type="MenuButton" parent="CanvasLayer/CenterContainer2" unique_id=757414641]
+layout_mode = 2
+text = "Menu"
+script = ExtResource("5_55kc7")
+
+[connection signal="pressed" from="CanvasLayer/CenterContainer/Menu Button" to="CanvasLayer/CenterContainer/Menu Button" method="_on_pressed"]

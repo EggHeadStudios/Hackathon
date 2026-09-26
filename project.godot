@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="For the King!"
-run/main_scene="uid://crdr4o3hpdk1y"
+run/main_scene="uid://dylrv4uv1kq2j"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
