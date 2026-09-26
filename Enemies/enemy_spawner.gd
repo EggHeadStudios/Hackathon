@@ -17,20 +17,26 @@ var spawn_radius: float = 200.0:
 @export var target := Node2D
 @export var spawn_max := 1
 
+@export var textures: Array[Texture2D] = []
+
+
 var num_spawned := 0
+var wave := 1
 
 
 func _ready() -> void:
 	if Engine.is_editor_hint():
 		return
-	var timer = Timer.new()
-	timer.wait_time = spawn_cooldown
-	timer.autostart = true
-	timer.timeout.connect(spawn_enemy)
-	add_child(timer)
+	#var timer = Timer.new()
+	#timer.wait_time = spawn_cooldown
+	#timer.autostart = true
+	#timer.timeout.connect(spawn_enemy_loop)
+	#add_child(timer)
+	
+	call_deferred("start_waves")# start_waves()
 
 
-func spawn_enemy() -> void:
+func spawn_enemy_loop() -> void:
 	if num_spawned < spawn_max:
 		var instance = enemy_scene.instantiate() as Enemy
 		var angle := randf_range(0.0, TAU)
@@ -38,9 +44,6 @@ func spawn_enemy() -> void:
 		var offset := Vector2.from_angle(angle) * distance
 		instance.global_position = global_position + offset
 		instance.target = target
-		instance.follow_distance = 50.0
-		instance.resume_distance = 60.0
-		instance.repath_distance = 50.0
 		get_tree().current_scene.add_child(instance)
 		num_spawned += 1
 
@@ -56,3 +59,31 @@ func _draw() -> void:
 		false,
 		2.0
 	)
+
+
+func start_waves() -> void:
+	if wave == 1:
+		
+		#await get_tree().create_timer(15.0).timeout
+		await spawn_enemy(textures[0], 50, 25, 5.0)
+		await spawn_enemy(textures[1], 3, 10.0, 10.0)
+		await spawn_enemy(textures[2], 2, 5.0, 20.0)
+	
+	wave += 1
+
+
+func spawn_enemy(texture: Texture2D, num: int, time: float, damage: float) -> void:
+	var time_per = time / num
+	for i in num:
+		var instance = enemy_scene.instantiate() as Enemy
+		var angle := randf_range(0.0, TAU)
+		var distance := sqrt(randf()) * spawn_radius
+		var offset := Vector2.from_angle(angle) * distance
+		instance.global_position = global_position + offset
+		instance.target = target
+		instance.attack_damage = damage
+		instance.name = str(texture.resource_path.get_file()) + " " + str(i)
+		var sprite = instance.get_node("Sprite2D") as Sprite2D
+		sprite.texture = texture
+		get_tree().current_scene.add_child(instance)
+		await get_tree().create_timer(time_per).timeout
