@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://crdr4o3hpdk1y"]
+
+[ext_resource type="Script" uid="uid://rs66sm2mpuqu" path="res://character_body_2d.gd" id="1_xhfnw"]
+[ext_resource type="Texture2D" uid="uid://bpic18s0aimfi" path="res://icon.svg" id="2_kpjcp"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_xhfnw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_md5kr"]
+radius = 16.0
+height = 32.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md5kr"]
+size = Vector2(104, 105)
+
+[node name="Node2D" type="Node2D" unique_id=1890732068]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1477049586]
+script = ExtResource("1_xhfnw")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1360911294]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1934369895]
+position = Vector2(3.4570293, 3.470705)
+scale = Vector2(7.0859413, 5.05859)
+texture = SubResource("CanvasTexture_xhfnw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=767890213]
+shape = SubResource("CapsuleShape2D_md5kr")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2051631016]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=265543488]
+position = Vector2(-84, 35.5)
+shape = SubResource("RectangleShape2D_md5kr")
+
+[node name="Icon" type="Sprite2D" parent="StaticBody2D" unique_id=1793136686]
+position = Vector2(-82, 38)
+texture = ExtResource("2_kpjcp")
