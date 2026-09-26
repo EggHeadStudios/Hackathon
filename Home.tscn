@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://rh03nhd52yic" path="res://camera_2d.gd" id="1_hf3nf"]
 [ext_resource type="Texture2D" uid="uid://bpic18s0aimfi" path="res://icon.svg" id="1_jmugw"]
-[ext_resource type="Texture2D" uid="uid://dpi533dclctvl" path="res://Assets/floor_tile_1.png" id="2_hf3nf"]
 [ext_resource type="Script" uid="uid://6dkp3j1xbvu4" path="res://button.gd" id="4_08a7v"]
 [ext_resource type="Script" uid="uid://dswo544vprace" path="res://menu_button.gd" id="5_55kc7"]
+[ext_resource type="Script" uid="uid://dqp12r337oeox" path="res://settings.gd" id="6_fs37c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf3nf"]
 texture = ExtResource("1_jmugw")
@@ -42,33 +42,47 @@ script = ExtResource("1_hf3nf")
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=511906701]
 tile_set = SubResource("TileSet_iyn1a")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=317774262]
+[node name="MenuLayer" type="CanvasLayer" parent="." unique_id=317774262]
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1390332162]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="CenterContainer" type="CenterContainer" parent="MenuLayer" unique_id=1390332162]
+offset_right = 79.0
+offset_bottom = 40.0
 
-[node name="Menu Button" type="Button" parent="CanvasLayer/CenterContainer" unique_id=767644210]
+[node name="Pause Button" type="Button" parent="MenuLayer/CenterContainer" unique_id=767644210]
 layout_mode = 2
 tooltip_text = "Press to Start!"
 theme = SubResource("Theme_jmugw")
 theme_override_font_sizes/font_size = 15
-text = "Push me!!"
-icon = ExtResource("2_hf3nf")
+text = "Pause"
 icon_alignment = 1
 script = ExtResource("4_08a7v")
 metadata/_edit_use_anchors_ = true
 
-[node name="CenterContainer2" type="CenterContainer" parent="CanvasLayer" unique_id=500003449]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="CenterContainer2" type="CenterContainer" parent="MenuLayer" unique_id=500003449]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -53.0
+offset_bottom = 31.0
+grow_horizontal = 0
 
-[node name="Popup" type="MenuButton" parent="CanvasLayer/CenterContainer2" unique_id=757414641]
+[node name="Popup" type="MenuButton" parent="MenuLayer/CenterContainer2" unique_id=757414641]
 layout_mode = 2
 text = "Menu"
 script = ExtResource("5_55kc7")
 
-[connection signal="pressed" from="CanvasLayer/CenterContainer/Menu Button" to="CanvasLayer/CenterContainer/Menu Button" method="_on_pressed"]
+[node name="CenterContainer3" type="CenterContainer" parent="MenuLayer" unique_id=1989636319]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_right = 35.0
+offset_bottom = 31.0
+grow_horizontal = 2
+
+[node name="Settings" type="MenuButton" parent="MenuLayer/CenterContainer3" unique_id=1954440988]
+layout_mode = 2
+text = "Settings"
+script = ExtResource("6_fs37c")
+
+[connection signal="pressed" from="MenuLayer/CenterContainer/Pause Button" to="MenuLayer/CenterContainer/Pause Button" method="_on_pressed"]
