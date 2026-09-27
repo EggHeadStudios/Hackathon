@@ -70,7 +70,7 @@ func _swing_sword () -> void:
 
 func _died() -> void:
 	died_ui.visible = true
-	player_sprite.visible = false
+	animated_sprite.visible = false
 	health_bar.visible = false
 	if attack_range:
 		attack_range.queue_free()
