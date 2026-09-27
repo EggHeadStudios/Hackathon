@@ -79,7 +79,7 @@ func _died() -> void:
 	
 	# go to main menu after 5 sec
 	await get_tree().create_timer(5.0).timeout
-	get_tree().change_scene_to_packed(main_menu)
+	get_tree().change_scene_to_file("res://Home.tscn")
 
 func set_victory() -> void:
 	victory = true
