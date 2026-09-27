@@ -3,12 +3,9 @@
 [ext_resource type="Script" uid="uid://bauljpkhsr53t" path="res://home.gd" id="1_fs37c"]
 [ext_resource type="Script" uid="uid://rh03nhd52yic" path="res://camera_2d.gd" id="1_hf3nf"]
 [ext_resource type="Texture2D" uid="uid://bpic18s0aimfi" path="res://icon.svg" id="1_jmugw"]
-[ext_resource type="Script" uid="uid://6dkp3j1xbvu4" path="res://button.gd" id="4_08a7v"]
-[ext_resource type="Texture2D" uid="uid://bmvhif61dqoi2" path="res://Assets/floor_1.png" id="4_bspk3"]
-[ext_resource type="Texture2D" uid="uid://bsvl5p5qf3uc0" path="res://Assets/wall_sprite_1.png" id="5_1f81l"]
-[ext_resource type="Script" uid="uid://dqp12r337oeox" path="res://settings.gd" id="6_fs37c"]
-[ext_resource type="Script" uid="uid://c0mv4crycuwda" path="res://option_button.gd" id="7_f516x"]
-[ext_resource type="Script" uid="uid://1or6u44rau47" path="res://back.gd" id="8_34ysk"]
+[ext_resource type="Texture2D" uid="uid://dblkfs377vtk4" path="res://Assets/floor_1.png" id="4_bspk3"]
+[ext_resource type="Texture2D" uid="uid://cskb65rxcuu6h" path="res://Assets/wall_sprite_1.png" id="5_1f81l"]
+[ext_resource type="FontFile" uid="uid://dfvy5krmagttc" path="res://Assets/Pirata_One/PirataOne-Regular.ttf" id="6_34ysk"]
 [ext_resource type="Script" uid="uid://18jtski1apsq" path="res://label.gd" id="8_ahk5f"]
 [ext_resource type="Script" uid="uid://cpvbewrb7d4xi" path="res://play_button.gd" id="11_1f81l"]
 
@@ -48,25 +45,6 @@ sources/0 = SubResource("TileSetAtlasSource_hf3nf")
 sources/1 = SubResource("TileSetAtlasSource_ydlth")
 sources/2 = SubResource("TileSetAtlasSource_62i41")
 
-[sub_resource type="Theme" id="Theme_jmugw"]
-default_font_size = 12
-
-[sub_resource type="FontFile" id="FontFile_34ysk"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-
 [node name="Base" type="Node2D" unique_id=1208199025]
 scale = Vector2(100, 100)
 script = ExtResource("1_fs37c")
@@ -79,66 +57,6 @@ script = ExtResource("1_hf3nf")
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=511906701]
 tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_iyn1a")
-
-[node name="MenuLayer" type="CanvasLayer" parent="." unique_id=317774262]
-
-[node name="CenterContainer" type="CenterContainer" parent="MenuLayer" unique_id=1390332162]
-offset_right = 79.0
-offset_bottom = 40.0
-
-[node name="Pause Button" type="Button" parent="MenuLayer/CenterContainer" unique_id=767644210]
-layout_mode = 2
-tooltip_text = "Press to Start!"
-theme = SubResource("Theme_jmugw")
-theme_override_font_sizes/font_size = 15
-text = "Pause"
-icon_alignment = 1
-script = ExtResource("4_08a7v")
-metadata/_edit_use_anchors_ = true
-
-[node name="CenterContainer3" type="CenterContainer" parent="MenuLayer" unique_id=1989636319]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -35.0
-offset_right = 35.0
-offset_bottom = 31.0
-grow_horizontal = 2
-
-[node name="Settings" type="Label" parent="MenuLayer/CenterContainer3" unique_id=396487182]
-layout_mode = 2
-text = "Settings
-"
-script = ExtResource("6_fs37c")
-
-[node name="CenterContainer5" type="CenterContainer" parent="MenuLayer" unique_id=1702327879]
-offset_left = 552.0
-offset_top = 17.0
-offset_right = 597.0
-offset_bottom = 57.0
-
-[node name="Back" type="Button" parent="MenuLayer/CenterContainer5" unique_id=42296494]
-layout_mode = 2
-text = "Back"
-flat = true
-script = ExtResource("8_34ysk")
-
-[node name="CenterContainer4" type="CenterContainer" parent="MenuLayer" unique_id=1353029595]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -39.0
-offset_top = 40.0
-offset_right = 39.0
-offset_bottom = 83.0
-grow_horizontal = 2
-offset_transform_position = Vector2(100, 65)
-
-[node name="OptionButton" type="MenuButton" parent="MenuLayer/CenterContainer4" unique_id=243904760]
-layout_mode = 2
-offset_transform_position = Vector2(100, 65)
-text = "Difficulty"
-script = ExtResource("7_f516x")
 
 [node name="Landing Page" type="CanvasLayer" parent="." unique_id=1362419973]
 
@@ -158,7 +76,8 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="Landing Page/CenterContainer" unique_id=1890489553]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.81960785, 0.7176471, 0.09019608, 1)
-theme_override_fonts/font = SubResource("FontFile_34ysk")
+theme_override_fonts/font = ExtResource("6_34ysk")
+theme_override_font_sizes/font_size = 23
 text = "Welcome to For The King!
 
 In this game, you will play as a king desperately defending his throne against mystical creatures!
@@ -167,7 +86,7 @@ The Goblins are here to steal the Golden Throne!
 
 The Ghosts haunt the King of his Terrible Past!
 
-The Knights seek a coup
+The Knights seek a Coup!
 
 Will you defend your Throne?"
 horizontal_alignment = 1
@@ -179,10 +98,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -11.0
-offset_top = -154.0
-offset_right = 30.0
-offset_bottom = -114.0
+offset_left = -14.0
+offset_top = -125.0
+offset_right = 27.0
+offset_bottom = -85.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -190,5 +109,3 @@ grow_vertical = 0
 layout_mode = 2
 text = "Play"
 script = ExtResource("11_1f81l")
-
-[connection signal="pressed" from="MenuLayer/CenterContainer/Pause Button" to="MenuLayer/CenterContainer/Pause Button" method="_on_pressed"]
