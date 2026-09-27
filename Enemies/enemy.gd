@@ -17,8 +17,10 @@ enum State {
 @export var reposition_distance := 70.0
 
 @export var attack_damage := 5.0
+@export var health := 100.0
 
 @onready var navigation_agent: NavigationAgent2D = $NavigationAgent2D
+@export var animated_sprite: AnimatedSprite2D
 
 var state := State.CHASING
 
@@ -27,6 +29,8 @@ var attack_count := 0
 
 var reposition_time := 0.0
 var reposition_target := Vector2.ZERO
+
+var animation_name: String
 
 
 func _ready() -> void:
@@ -136,6 +140,8 @@ func move_along_navigation(move_speed: float) -> void:
 func stop_moving() -> void:
 	navigation_agent.velocity = Vector2.ZERO
 	velocity = Vector2.ZERO
+	animated_sprite.pause()
+	animated_sprite.frame = 0
 
 
 func _on_area_2d_body_shape_entered(_body_rid: RID, body: Node2D, _body_shape_index: int, _local_shape_index: int) -> void:
@@ -151,7 +157,20 @@ func _on_area_2d_body_shape_exited(_body_rid: RID, body: Node2D, _body_shape_ind
 func _on_navigation_agent_2d_velocity_computed(safe_velocity: Vector2) -> void:
 	if state == State.ATTACKING:
 		velocity = Vector2.ZERO
+		animated_sprite.pause()
+		animated_sprite.frame = 0
 		return
 	
+	animated_sprite.speed_scale = speed / 100
+	animated_sprite.play(animation_name)
 	velocity = safe_velocity
 	move_and_slide()
+
+
+func take_damage(num: float) -> void:
+	health -= num
+	if health <= 0:
+		print("player killed %s" % name)
+		queue_free()
+	else:
+		print("player attacked %s for %d damage (remaining %d)" % [name, num, health])

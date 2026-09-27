@@ -2,32 +2,101 @@
 
 [ext_resource type="Script" uid="uid://bp7p1gcrmbgsy" path="res://Enemies/enemy.gd" id="1_bxkaj"]
 [ext_resource type="Texture2D" uid="uid://c0jvvkm4nl2ye" path="res://Assets/goblin_1.png" id="2_47qgu"]
+[ext_resource type="Texture2D" uid="uid://bk6wf1gel7erx" path="res://Assets/ghost_1.png" id="3_t8uwx"]
+[ext_resource type="Texture2D" uid="uid://bgkspxoakagx0" path="res://Assets/ghost_2.png" id="4_tligp"]
+[ext_resource type="Texture2D" uid="uid://c1syqtfo1nh5m" path="res://Assets/goblin_2.png" id="5_ud0f3"]
+[ext_resource type="Texture2D" uid="uid://cdpomhmlcsn06" path="res://Assets/goblin_3.png" id="6_1xcb7"]
+[ext_resource type="Texture2D" uid="uid://ssjj7yxhvkb7" path="res://Assets/goblin_4.png" id="7_okpwn"]
+[ext_resource type="Texture2D" uid="uid://1wyrh0ni01re" path="res://Assets/knight_1.png" id="8_dc8db"]
+[ext_resource type="Texture2D" uid="uid://cerds6ehbrm0c" path="res://Assets/knight_2.png" id="9_xq7gr"]
+[ext_resource type="Texture2D" uid="uid://qenbyydciu" path="res://Assets/knight_3.png" id="10_nq37r"]
+[ext_resource type="Texture2D" uid="uid://bdgx3rk6wo5jd" path="res://Assets/knight_4.png" id="11_74xqn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j7vk8"]
 radius = 6.0
 height = 36.0
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_j7vk8"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_t8uwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tligp")
+}],
+"loop": 1,
+"name": &"ghost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_47qgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ud0f3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1xcb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_okpwn")
+}],
+"loop": 1,
+"name": &"goblin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_dc8db")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xq7gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nq37r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_74xqn")
+}],
+"loop": 1,
+"name": &"knight",
+"speed": 5.0
+}]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_j7vk8"]
 radius = 20.0
 
-[node name="Enemy" type="CharacterBody2D" unique_id=1562279870]
+[node name="Enemy" type="CharacterBody2D" unique_id=1562279870 node_paths=PackedStringArray("animated_sprite")]
 collision_layer = 4
 script = ExtResource("1_bxkaj")
 speed = 75.0
 repath_distance = 32.0
 attack_duration = 0.025
+animated_sprite = NodePath("AnimatedSprite2D")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=452575180]
 path_desired_distance = 5.0
 target_desired_distance = 2.5
 avoidance_enabled = true
 neighbor_distance = 50.0
+max_speed = 500.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1298526397]
 shape = SubResource("CapsuleShape2D_j7vk8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=48344710]
+visible = false
 texture = ExtResource("2_47qgu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1298623145]
+sprite_frames = SubResource("SpriteFrames_j7vk8")
+animation = &"goblin"
 
 [node name="Area2D" type="Area2D" parent="." unique_id=139602411]
 collision_layer = 0
