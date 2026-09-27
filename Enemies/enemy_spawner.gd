@@ -65,14 +65,14 @@ func start_waves() -> void:
 	if wave == 1:
 		
 		#await get_tree().create_timer(15.0).timeout
-		await spawn_enemy("goblin", 10, 10, 5.0, 25.0, 150.0)
-		await spawn_enemy("ghost", 3, 10.0, 10.0, 50.0, 100.0)
-		await spawn_enemy("knight", 2, 5.0, 20.0, 100.0, 75.0)
+		await spawn_enemy("goblin", 10, 10, 5.0, 25.0, 150.0, 0.75)
+		await spawn_enemy("ghost", 3, 10.0, 10.0, 50.0, 100.0, 1.0)
+		await spawn_enemy("knight", 2, 5.0, 20.0, 100.0, 75.0, 1.3)
 	
 	wave += 1
 
 
-func spawn_enemy(anim_name: String, num: int, time: float, damage: float, health: float, speed: float) -> void:
+func spawn_enemy(anim_name: String, num: int, time: float, damage: float, health: float, speed: float, size_scale: float) -> void:
 	var time_per = time / num
 	for i in num:
 		var instance = enemy_scene.instantiate() as Enemy
@@ -87,5 +87,6 @@ func spawn_enemy(anim_name: String, num: int, time: float, damage: float, health
 		instance.animation_name = anim_name
 		instance.speed = speed
 		instance.reposition_speed = speed / 1.2
+		instance.animated_sprite.scale = Vector2(size_scale, size_scale)
 		get_tree().current_scene.add_child(instance)
 		await get_tree().create_timer(time_per).timeout

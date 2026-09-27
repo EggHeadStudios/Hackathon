@@ -342,6 +342,7 @@ texture = ExtResource("4_wxgli")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1700659349]
 z_index = 4001
+scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_lxixf")
 animation = &"up"
 
