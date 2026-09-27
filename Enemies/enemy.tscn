@@ -81,8 +81,9 @@ attack_duration = 0.025
 animated_sprite = NodePath("AnimatedSprite2D")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=452575180]
-path_desired_distance = 5.0
-target_desired_distance = 2.5
+path_desired_distance = 16.0
+target_desired_distance = 16.0
+path_max_distance = 30.0
 avoidance_enabled = true
 neighbor_distance = 50.0
 max_speed = 500.0
