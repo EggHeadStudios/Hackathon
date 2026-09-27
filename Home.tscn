@@ -4,9 +4,13 @@
 [ext_resource type="Script" uid="uid://rh03nhd52yic" path="res://camera_2d.gd" id="1_hf3nf"]
 [ext_resource type="Texture2D" uid="uid://bpic18s0aimfi" path="res://icon.svg" id="1_jmugw"]
 [ext_resource type="Script" uid="uid://6dkp3j1xbvu4" path="res://button.gd" id="4_08a7v"]
+[ext_resource type="Texture2D" uid="uid://bmvhif61dqoi2" path="res://Assets/floor_1.png" id="4_bspk3"]
+[ext_resource type="Texture2D" uid="uid://bsvl5p5qf3uc0" path="res://Assets/wall_sprite_1.png" id="5_1f81l"]
 [ext_resource type="Script" uid="uid://dqp12r337oeox" path="res://settings.gd" id="6_fs37c"]
 [ext_resource type="Script" uid="uid://c0mv4crycuwda" path="res://option_button.gd" id="7_f516x"]
 [ext_resource type="Script" uid="uid://1or6u44rau47" path="res://back.gd" id="8_34ysk"]
+[ext_resource type="Script" uid="uid://18jtski1apsq" path="res://label.gd" id="8_ahk5f"]
+[ext_resource type="Script" uid="uid://cpvbewrb7d4xi" path="res://play_button.gd" id="11_1f81l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf3nf"]
 texture = ExtResource("1_jmugw")
@@ -28,21 +32,52 @@ texture_region_size = Vector2i(32, 32)
 2:3/0 = 0
 3:3/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ydlth"]
+texture = ExtResource("4_bspk3")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_62i41"]
+texture = ExtResource("5_1f81l")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_iyn1a"]
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_hf3nf")
+sources/1 = SubResource("TileSetAtlasSource_ydlth")
+sources/2 = SubResource("TileSetAtlasSource_62i41")
 
 [sub_resource type="Theme" id="Theme_jmugw"]
 default_font_size = 12
+
+[sub_resource type="FontFile" id="FontFile_34ysk"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [node name="Base" type="Node2D" unique_id=1208199025]
 scale = Vector2(100, 100)
 script = ExtResource("1_fs37c")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=486412478]
+position = Vector2(16.23, 16.36)
+zoom = Vector2(0.7, 0.7)
 script = ExtResource("1_hf3nf")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=511906701]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_iyn1a")
 
 [node name="MenuLayer" type="CanvasLayer" parent="." unique_id=317774262]
@@ -104,5 +139,56 @@ layout_mode = 2
 offset_transform_position = Vector2(100, 65)
 text = "Difficulty"
 script = ExtResource("7_f516x")
+
+[node name="Landing Page" type="CanvasLayer" parent="." unique_id=1362419973]
+
+[node name="CenterContainer" type="CenterContainer" parent="Landing Page" unique_id=1149918135]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Landing Page/CenterContainer" unique_id=1890489553]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.81960785, 0.7176471, 0.09019608, 1)
+theme_override_fonts/font = SubResource("FontFile_34ysk")
+text = "Welcome to For The King!
+
+In this game, you will play as a king desperately defending his throne against mystical creatures!
+
+The Goblins are here to steal the Golden Throne!
+
+The Ghosts haunt the King of his Terrible Past!
+
+The Knights seek a coup
+
+Will you defend your Throne?"
+horizontal_alignment = 1
+script = ExtResource("8_ahk5f")
+
+[node name="CenterContainer2" type="CenterContainer" parent="Landing Page" unique_id=2074655764]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_top = -154.0
+offset_right = 30.0
+offset_bottom = -114.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Play Button" type="Button" parent="Landing Page/CenterContainer2" unique_id=447719237]
+layout_mode = 2
+text = "Play"
+script = ExtResource("11_1f81l")
 
 [connection signal="pressed" from="MenuLayer/CenterContainer/Pause Button" to="MenuLayer/CenterContainer/Pause Button" method="_on_pressed"]
