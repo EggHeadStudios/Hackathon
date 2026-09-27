@@ -3,7 +3,9 @@ class_name Enemy extends CharacterBody2D
 enum State {
 	CHASING,
 	ATTACKING,
-	REPOSITIONING
+	REPOSITIONING,
+	KNOCKBACK,
+	STAGGERED
 }
 
 @export var speed := 100.0
@@ -19,6 +21,9 @@ enum State {
 @export var attack_damage := 5.0
 @export var health := 100.0
 
+@export var knockback_duration := 0.15
+@export var stagger_duration := 0.2
+
 @onready var navigation_agent: NavigationAgent2D = $NavigationAgent2D
 @export var animated_sprite: AnimatedSprite2D
 
@@ -31,6 +36,10 @@ var reposition_time := 0.0
 var reposition_target := Vector2.ZERO
 
 var animation_name: String
+
+var knockback_velocity := Vector2.ZERO
+var knockback_time := 0.0
+var stagger_time := 0.0
 
 
 func _ready() -> void:
@@ -49,6 +58,12 @@ func _physics_process(delta: float) -> void:
 
 		State.REPOSITIONING:
 			reposition(delta)
+		
+		State.KNOCKBACK:
+			process_knockback(delta)
+		
+		State.STAGGERED:
+			process_stagger(delta)
 
 
 func chase() -> void:
@@ -161,6 +176,13 @@ func _on_navigation_agent_2d_velocity_computed(safe_velocity: Vector2) -> void:
 		animated_sprite.frame = 0
 		return
 	
+	if state == State.KNOCKBACK:
+		return
+	
+	if state == State.STAGGERED:
+		velocity = Vector2.ZERO
+		return
+	
 	animated_sprite.speed_scale = speed / 100
 	animated_sprite.play(animation_name)
 	velocity = safe_velocity
@@ -174,3 +196,38 @@ func take_damage(num: float) -> void:
 		queue_free()
 	else:
 		print("player attacked %s for %d damage (remaining %d)" % [name, num, health])
+
+
+func apply_knockback(from_position: Vector2, force: float) -> void:
+	var direction := from_position.direction_to(global_position)
+
+	knockback_velocity = direction * force
+	knockback_time = knockback_duration
+	state = State.KNOCKBACK
+
+	navigation_agent.velocity = Vector2.ZERO
+
+
+func process_knockback(delta: float) -> void:
+	knockback_time -= delta
+
+	if knockback_time <= 0.0:
+		knockback_velocity = Vector2.ZERO
+		velocity = Vector2.ZERO
+
+		stagger_time = stagger_duration
+		state = State.STAGGERED
+		return
+
+	velocity = knockback_velocity
+	move_and_slide()
+
+
+func process_stagger(delta: float) -> void:
+	stagger_time -= delta
+
+	velocity = Vector2.ZERO
+	navigation_agent.velocity = Vector2.ZERO
+
+	if stagger_time <= 0.0:
+		state = State.CHASING

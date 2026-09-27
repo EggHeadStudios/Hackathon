@@ -12,6 +12,8 @@ extends Area2D
 @export var auto_attack := true
 @export var attack_cooldown := 0.75
 
+@export var knockback_force := 250.0
+
 @onready var attack_range_area: Area2D = $"."
 @onready var attack_animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -94,6 +96,7 @@ func attack() -> void:
 
 		if attack_direction.dot(direction_to_enemy) >= minimum_dot:
 			body.take_damage(attack_damage)
+			body.apply_knockback(global_position, knockback_force)
 
 
 func play_attack_animation(direction: Vector2) -> void:
