@@ -95,6 +95,7 @@ func attack() -> void:
 		var direction_to_enemy := to_enemy.normalized()
 
 		if attack_direction.dot(direction_to_enemy) >= minimum_dot:
+			$"../../Sfx".play()
 			body.take_damage(attack_damage)
 			body.apply_knockback(global_position, knockback_force)
 

@@ -57,8 +57,6 @@
 [ext_resource type="Script" uid="uid://dqp12r337oeox" path="res://settings.gd" id="55_87fvh"]
 [ext_resource type="Script" uid="uid://1or6u44rau47" path="res://back.gd" id="56_m700p"]
 [ext_resource type="Script" uid="uid://c0mv4crycuwda" path="res://option_button.gd" id="57_dn2p4"]
-[ext_resource type="AudioStream" uid="uid://cajv2yx0gehet" path="res://Assets/Game Music.mp3" id="58_87fvh"]
-[ext_resource type="AudioStream" uid="uid://1ued6v18dqq" path="res://Assets/swing.mp3" id="59_m700p"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_uq07v"]
 vertices = PackedVector2Array(2718, 158, 2754, 162, 2238, 162, 2626, 158, 2366, 158, 2274, 158, 2718, -34, 2718, -158, 2754, -162, 2238, -162, 2626, -158, 2274, 34, 2626, 34, 2366, 34, 2366, -34, 2626, -34, 2366, -158, 2274, -158, 2718, 34, 2274, -34, 482, -290, 482, 290, 390, 198, 390, -206, -482, -290, 218, -206, 34, 290, 218, 198, -34, 290, -218, 198, -218, -206, -390, -206, -482, 290, -390, 198, 34, 354, -34, 354)
@@ -470,14 +468,13 @@ spawn_radius = 25.0
 target = NodePath("../CharacterBody2D")
 textures = Array[Texture2D]([ExtResource("3_uq07v"), ExtResource("2_cr7qo"), ExtResource("7_2kh3b")])
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=877936197 node_paths=PackedStringArray("health_bar", "health_label", "died_ui", "victory_ui", "player_sprite", "attack_range", "animated_sprite")]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=877936197 node_paths=PackedStringArray("health_bar", "health_label", "died_ui", "player_sprite", "attack_range", "animated_sprite")]
 collision_layer = 2
 collision_mask = 9
 script = ExtResource("11_cr7qo")
 health_bar = NodePath("CanvasLayer/HealthBar")
 health_label = NodePath("CanvasLayer/HealthBar/CenterContainer/Label")
 died_ui = NodePath("CanvasLayer/DiedUI")
-victory_ui = NodePath("CanvasLayer/VictoryUI")
 player_sprite = NodePath("PlayerSprite")
 main_menu = ExtResource("22_p1mbh")
 attack_range = NodePath("AttackRange")
@@ -572,24 +569,6 @@ theme_override_colors/font_color = Color(1, 0.07058824, 0.19607843, 1)
 theme_override_font_sizes/font_size = 32
 text = "You Died"
 
-[node name="VictoryUI" type="PanelContainer" parent="CharacterBody2D/CanvasLayer" unique_id=1972353671]
-visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_xet5u")
-
-[node name="CenterContainer" type="CenterContainer" parent="CharacterBody2D/CanvasLayer/VictoryUI" unique_id=2116155110]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="CharacterBody2D/CanvasLayer/VictoryUI/CenterContainer" unique_id=102869914]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.2406955, 0.64440125, 5.7756904e-07, 1)
-theme_override_font_sizes/font_size = 32
-text = "Victory!"
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1995931565]
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1794226793]
@@ -649,13 +628,5 @@ layout_mode = 2
 offset_transform_position = Vector2(100, 65)
 text = "Difficulty"
 script = ExtResource("57_dn2p4")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=782443132]
-stream = ExtResource("58_87fvh")
-volume_db = -15.841
-autoplay = true
-
-[node name="Sfx" type="AudioStreamPlayer2D" parent="." unique_id=23806021]
-stream = ExtResource("59_m700p")
 
 [connection signal="pressed" from="CanvasLayer/CenterContainer/Pause Button" to="CanvasLayer/CenterContainer/Pause Button" method="_on_pressed"]

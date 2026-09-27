@@ -57,12 +57,32 @@ func _draw() -> void:
 func start_waves() -> void:
 	# waves don't do anything yet
 	# easy 2, medium 3, hard 4 - minutes to survive
+	start_timer()
 	if wave == 1:
 		await spawn_enemies("goblin", 10, 10, 5.0, 25.0, 150.0, 0.75)
 		await spawn_enemies("ghost", 3, 10.0, 10.0, 50.0, 100.0, 1.0)
 		await spawn_enemies("knight", 2, 5.0, 20.0, 100.0, 75.0, 1.3)
+		await spawn_enemies("goblin", 20, 10, 5.0, 25.0, 150.0, 0.75)
+		await spawn_enemies("ghost", 20, 20, 5.0, 25.0, 150.0, 1)
+		await spawn_enemies("knight", 5, 10, 5.0, 25.0, 150.0, 0.75)
+		await spawn_enemies("goblin", 40, 10, 5.0, 25.0, 150.0, 2)
+		await spawn_enemies("ghost", 20, 20, 5.0, 25.0, 150.0, 0.75)
+		await spawn_enemies("knight", 10, 10, 5.0, 25.0, 150.0, 0.75)
 	
 	wave += 1
+
+
+func start_timer() -> void:
+	if Globals.difficulty == "easy":
+		print("easy - 2 minutes")
+		await get_tree().create_timer(2 * 60.0).timeout
+	elif Globals.difficulty == "medium":
+		print("medium - 3 minutes")
+		await get_tree().create_timer(3 * 60.0).timeout
+	elif Globals.difficulty == "hard":
+		print("hard - 4 minutes")
+		await get_tree().create_timer(4 * 60.0).timeout
+	$"../CharacterBody2D".set_victory()
 
 
 ## spawn <num> of enemies in <time> with set <damage>, <health>, <speed>, and <size>
