@@ -4,9 +4,9 @@
 [ext_resource type="Script" uid="uid://rh03nhd52yic" path="res://camera_2d.gd" id="1_hf3nf"]
 [ext_resource type="Texture2D" uid="uid://bpic18s0aimfi" path="res://icon.svg" id="1_jmugw"]
 [ext_resource type="Script" uid="uid://6dkp3j1xbvu4" path="res://button.gd" id="4_08a7v"]
+[ext_resource type="Script" uid="uid://dswo544vprace" path="res://menu_button.gd" id="5_55kc7"]
 [ext_resource type="Script" uid="uid://dqp12r337oeox" path="res://settings.gd" id="6_fs37c"]
 [ext_resource type="Script" uid="uid://c0mv4crycuwda" path="res://option_button.gd" id="7_f516x"]
-[ext_resource type="Script" uid="uid://1or6u44rau47" path="res://back.gd" id="8_34ysk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf3nf"]
 texture = ExtResource("1_jmugw")
@@ -61,6 +61,19 @@ icon_alignment = 1
 script = ExtResource("4_08a7v")
 metadata/_edit_use_anchors_ = true
 
+[node name="CenterContainer2" type="CenterContainer" parent="MenuLayer" unique_id=500003449]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -53.0
+offset_bottom = 31.0
+grow_horizontal = 0
+
+[node name="Popup" type="MenuButton" parent="MenuLayer/CenterContainer2" unique_id=757414641]
+layout_mode = 2
+text = "Menu"
+script = ExtResource("5_55kc7")
+
 [node name="CenterContainer3" type="CenterContainer" parent="MenuLayer" unique_id=1989636319]
 anchors_preset = 5
 anchor_left = 0.5
@@ -70,32 +83,20 @@ offset_right = 35.0
 offset_bottom = 31.0
 grow_horizontal = 2
 
-[node name="Settings" type="Label" parent="MenuLayer/CenterContainer3" unique_id=396487182]
+[node name="Settings" type="MenuButton" parent="MenuLayer/CenterContainer3" unique_id=1901077664]
 layout_mode = 2
 text = "Settings
 "
 script = ExtResource("6_fs37c")
 
-[node name="CenterContainer5" type="CenterContainer" parent="MenuLayer" unique_id=1702327879]
-offset_left = 552.0
-offset_top = 17.0
-offset_right = 597.0
-offset_bottom = 57.0
-
-[node name="Back" type="Button" parent="MenuLayer/CenterContainer5" unique_id=42296494]
-layout_mode = 2
-text = "Back"
-flat = true
-script = ExtResource("8_34ysk")
-
 [node name="CenterContainer4" type="CenterContainer" parent="MenuLayer" unique_id=1353029595]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -39.0
-offset_top = 40.0
-offset_right = 39.0
-offset_bottom = 83.0
+offset_left = 84.0
+offset_top = 62.0
+offset_right = 126.0
+offset_bottom = 105.0
 grow_horizontal = 2
 offset_transform_position = Vector2(100, 65)
 

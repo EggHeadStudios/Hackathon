@@ -20,5 +20,7 @@ func _select (id: int) -> void:
 		1:
 			# open settings asp
 			$"../../CenterContainer3/Settings".show()
+			$"../../CenterContainer4/OptionButton".show()
+			$"../../CenterContainer5/Back".show()
 			hide()
 			
