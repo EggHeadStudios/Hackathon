@@ -9,10 +9,15 @@ extends Area2D
 
 @export var show_debug_cone := false
 
+@export var auto_attack := true
+@export var attack_cooldown := 0.75
+
 @onready var attack_range_area: Area2D = $"."
 @onready var attack_animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 var attack_flash := false
+
+var attack_cooldown_remaining := 0.0
 
 
 func _ready() -> void:
@@ -20,12 +25,50 @@ func _ready() -> void:
 	attack_animated_sprite.animation_finished.connect(_on_attack_animated_sprite_animation_finished)
 
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	if show_debug_cone:
 		queue_redraw()
 	
-	if Input.is_action_just_pressed("attack"):
-		attack()
+	if attack_cooldown_remaining > 0.0:
+		attack_cooldown_remaining -= delta
+
+	if not auto_attack and Input.is_action_just_pressed("attack"):
+		try_attack()
+
+	if auto_attack and attack_cooldown_remaining <= 0.0:
+		if has_enemy_in_cone():
+			try_attack()
+
+
+func has_enemy_in_cone() -> bool:
+	var attack_direction := global_position.direction_to(get_global_mouse_position())
+
+	var half_angle := deg_to_rad(attack_angle / 2.0)
+	var minimum_dot := cos(half_angle)
+
+	for body in attack_range_area.get_overlapping_bodies():
+		if not body is Enemy:
+			continue
+
+		var to_enemy := body.global_position - global_position
+
+		if to_enemy.length() > attack_range:
+			continue
+
+		var direction_to_enemy := to_enemy.normalized()
+
+		if attack_direction.dot(direction_to_enemy) >= minimum_dot:
+			return true
+
+	return false
+
+
+func try_attack() -> void:
+	if attack_cooldown_remaining > 0.0:
+		return
+
+	attack_cooldown_remaining = attack_cooldown
+	attack()
 
 
 func attack() -> void:
