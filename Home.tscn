@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://da7cb6mplrwdi" path="res://Assets/floor_1.png" id="4_bspk3"]
 [ext_resource type="Texture2D" uid="uid://dwb70xn148cw5" path="res://Assets/wall_sprite_1.png" id="5_1f81l"]
 [ext_resource type="FontFile" uid="uid://dfvy5krmagttc" path="res://Assets/Pirata_One/PirataOne-Regular.ttf" id="6_34ysk"]
+[ext_resource type="Script" uid="uid://18jtski1apsq" path="res://label.gd" id="8_ahk5f"]
 [ext_resource type="Script" uid="uid://cpvbewrb7d4xi" path="res://play_button.gd" id="11_1f81l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf3nf"]
@@ -123,3 +124,4 @@ offset_bottom = 573.0
 [node name="Label" type="Label" parent="Landing Page/CenterContainer" unique_id=489226602]
 layout_mode = 2
 text = "Current High Score:"
+script = ExtResource("8_ahk5f")

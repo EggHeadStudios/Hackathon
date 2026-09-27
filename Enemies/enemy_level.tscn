@@ -1,58 +1,62 @@
 [gd_scene format=4 uid="uid://njxahafpyjgs"]
 
-[ext_resource type="Texture2D" uid="uid://dblkfs377vtk4" path="res://Assets/floor_1.png" id="1_cr7qo"]
-[ext_resource type="Texture2D" uid="uid://3341ceyr7x6a" path="res://Assets/ghost_1.png" id="2_cr7qo"]
-[ext_resource type="Texture2D" uid="uid://dbqcry6fe2nm1" path="res://Assets/background.png" id="2_u6mkd"]
-[ext_resource type="Texture2D" uid="uid://c8c46tvt0jmtr" path="res://Assets/carpet-bleft.png" id="3_2pe2p"]
-[ext_resource type="Texture2D" uid="uid://d1xdnv3cr4gw4" path="res://Assets/goblin_1.png" id="3_uq07v"]
-[ext_resource type="Texture2D" uid="uid://nee1ebk7npaf" path="res://Assets/carpet-bottom.png" id="4_47pw4"]
-[ext_resource type="Texture2D" uid="uid://cn75psj4ygeoq" path="res://Assets/king_down_1.png" id="4_wxgli"]
-[ext_resource type="Texture2D" uid="uid://dct4cgt34qr5r" path="res://Assets/carpet-bright.png" id="5_kg283"]
-[ext_resource type="Texture2D" uid="uid://b80umx6jjyg21" path="res://Assets/king_side_1.png" id="5_lec4v"]
-[ext_resource type="Texture2D" uid="uid://gj0rms5fvwuu" path="res://Assets/king_up_1.png" id="6_8xo6l"]
-[ext_resource type="Texture2D" uid="uid://co7h1n2m0o71s" path="res://Assets/carpet-left.png" id="6_pxpom"]
-[ext_resource type="Texture2D" uid="uid://dqk34yxdrjbss" path="res://Assets/knight_1.png" id="7_2kh3b"]
-[ext_resource type="Texture2D" uid="uid://cpg6ln8vgq7cl" path="res://Assets/carpet-main.png" id="7_y5etu"]
-[ext_resource type="Texture2D" uid="uid://cskb65rxcuu6h" path="res://Assets/wall_sprite_1.png" id="8_44lef"]
-[ext_resource type="Texture2D" uid="uid://ba5shbx1juq3e" path="res://Assets/carpet-right.png" id="8_87fvh"]
-[ext_resource type="Texture2D" uid="uid://c7s4w7w2mj5co" path="res://Assets/entrance.png" id="9_2kh3b"]
+[ext_resource type="Texture2D" uid="uid://da7cb6mplrwdi" path="res://Assets/floor_1.png" id="1_cr7qo"]
+[ext_resource type="Texture2D" uid="uid://dwcu0gam6dyx" path="res://Assets/ghost_1.png" id="2_cr7qo"]
+[ext_resource type="Texture2D" uid="uid://cu31ispwresnl" path="res://Assets/background.png" id="2_u6mkd"]
+[ext_resource type="Texture2D" uid="uid://cfsajdpp8nrdg" path="res://Assets/carpet-bleft.png" id="3_2pe2p"]
+[ext_resource type="Texture2D" uid="uid://dnkeprnnqatm6" path="res://Assets/goblin_1.png" id="3_uq07v"]
+[ext_resource type="Texture2D" uid="uid://do2u6yb7qyg15" path="res://Assets/carpet-bottom.png" id="4_47pw4"]
+[ext_resource type="Texture2D" uid="uid://yne5pqpk6gnw" path="res://Assets/king_down_1.png" id="4_wxgli"]
+[ext_resource type="Texture2D" uid="uid://dmjoapcpltg46" path="res://Assets/carpet-bright.png" id="5_kg283"]
+[ext_resource type="Texture2D" uid="uid://uad6w67xrpp4" path="res://Assets/king_side_1.png" id="5_lec4v"]
+[ext_resource type="Texture2D" uid="uid://8qf22opg6dvo" path="res://Assets/king_up_1.png" id="6_8xo6l"]
+[ext_resource type="Texture2D" uid="uid://bnra884j6m4n0" path="res://Assets/carpet-left.png" id="6_pxpom"]
+[ext_resource type="Texture2D" uid="uid://cvwonxxrhrweu" path="res://Assets/knight_1.png" id="7_2kh3b"]
+[ext_resource type="Texture2D" uid="uid://brx347q1pbn3h" path="res://Assets/carpet-main.png" id="7_y5etu"]
+[ext_resource type="Texture2D" uid="uid://dwb70xn148cw5" path="res://Assets/wall_sprite_1.png" id="8_44lef"]
+[ext_resource type="Texture2D" uid="uid://dmenrvken035i" path="res://Assets/carpet-right.png" id="8_87fvh"]
+[ext_resource type="Texture2D" uid="uid://b0x0ng1l0jhwc" path="res://Assets/entrance.png" id="9_2kh3b"]
 [ext_resource type="PackedScene" uid="uid://cdtks0lnbxydg" path="res://Enemies/enemy_spawner.tscn" id="9_cr7qo"]
-[ext_resource type="Texture2D" uid="uid://dkbi30wt80i26" path="res://Assets/south-wall-top.png" id="9_lxixf"]
+[ext_resource type="Texture2D" uid="uid://bcjbpux0elvli" path="res://Assets/south-wall-top.png" id="9_lxixf"]
 [ext_resource type="PackedScene" uid="uid://do18xr5irxy4o" path="res://Enemies/enemy.tscn" id="9_oyeur"]
-[ext_resource type="Texture2D" uid="uid://buxlwn8f1bi0s" path="res://Assets/wall_sprite_lft_corner.png" id="10_44lef"]
-[ext_resource type="Texture2D" uid="uid://c7c7fum31rc7q" path="res://Assets/east-wall-to-corner.png" id="10_lxixf"]
-[ext_resource type="Texture2D" uid="uid://csup23anb51vk" path="res://Assets/stairs-1.png" id="11_7amoa"]
+[ext_resource type="Texture2D" uid="uid://bige06d1s3vwj" path="res://Assets/wall_sprite_lft_corner.png" id="10_44lef"]
+[ext_resource type="Texture2D" uid="uid://uqg5h28scys8" path="res://Assets/east-wall-to-corner.png" id="10_lxixf"]
+[ext_resource type="Texture2D" uid="uid://bcup7wi011q8o" path="res://Assets/stairs-1.png" id="11_7amoa"]
 [ext_resource type="Script" uid="uid://rs66sm2mpuqu" path="res://character_body_2d.gd" id="11_cr7qo"]
-[ext_resource type="Texture2D" uid="uid://cnbjiy3rrwffc" path="res://Assets/wall_sprite_lft_ent.png" id="11_oyeur"]
-[ext_resource type="Texture2D" uid="uid://bsjv6g2xetg0g" path="res://Assets/west-wall-top.png" id="11_sn8h0"]
-[ext_resource type="Texture2D" uid="uid://bj5i5640j84k3" path="res://Assets/wall_sprite_rgt_corner.png" id="12_gepod"]
-[ext_resource type="Texture2D" uid="uid://l7fx0xy1n3el" path="res://Assets/stairs-2.png" id="12_hjgm6"]
-[ext_resource type="Texture2D" uid="uid://cnx8iech75358" path="res://Assets/west-wall-top-corner.png" id="12_jevjg"]
-[ext_resource type="Texture2D" uid="uid://bghwg5kjgbk8h" path="res://Assets/bottom-left-tuck-corner.png" id="13_hjgm6"]
-[ext_resource type="Texture2D" uid="uid://cfjxo735dyh2v" path="res://Assets/bottom-left-corner.png" id="13_p16co"]
-[ext_resource type="Texture2D" uid="uid://c8uddyrh8v6vf" path="res://Assets/wall_sprite_rgt_ent.png" id="13_xlvyo"]
-[ext_resource type="Texture2D" uid="uid://qie6ykv1k1q4" path="res://Assets/wall_sprite_top_door.png" id="14_44lef"]
-[ext_resource type="Texture2D" uid="uid://bbjlb14jpae3b" path="res://Assets/bottom-right-corner.png" id="14_ems3r"]
-[ext_resource type="Texture2D" uid="uid://xc7wsnv0k3ql" path="res://Assets/bottom-right-tuck-corner.png" id="14_l25qm"]
-[ext_resource type="Texture2D" uid="uid://drl1t2uffifgx" path="res://Assets/throne.png" id="17_nidou"]
+[ext_resource type="Texture2D" uid="uid://d1olkegk6ks7d" path="res://Assets/wall_sprite_lft_ent.png" id="11_oyeur"]
+[ext_resource type="Texture2D" uid="uid://b8nyb5fnh6hc3" path="res://Assets/west-wall-top.png" id="11_sn8h0"]
+[ext_resource type="Texture2D" uid="uid://dnh6fyqdllugc" path="res://Assets/wall_sprite_rgt_corner.png" id="12_gepod"]
+[ext_resource type="Texture2D" uid="uid://c71h6xywgvn81" path="res://Assets/stairs-2.png" id="12_hjgm6"]
+[ext_resource type="Texture2D" uid="uid://be1l1ue2frxsv" path="res://Assets/west-wall-top-corner.png" id="12_jevjg"]
+[ext_resource type="Texture2D" uid="uid://duijn3k0dmtwq" path="res://Assets/bottom-left-tuck-corner.png" id="13_hjgm6"]
+[ext_resource type="Texture2D" uid="uid://ccwqhcytqoigr" path="res://Assets/bottom-left-corner.png" id="13_p16co"]
+[ext_resource type="Texture2D" uid="uid://d0wxpgo08ncap" path="res://Assets/wall_sprite_rgt_ent.png" id="13_xlvyo"]
+[ext_resource type="Texture2D" uid="uid://dif15enj25kxn" path="res://Assets/wall_sprite_top_door.png" id="14_44lef"]
+[ext_resource type="Texture2D" uid="uid://bbr6v7lbwv7fw" path="res://Assets/bottom-right-corner.png" id="14_ems3r"]
+[ext_resource type="Texture2D" uid="uid://biqjwa232dknu" path="res://Assets/bottom-right-tuck-corner.png" id="14_l25qm"]
+[ext_resource type="Texture2D" uid="uid://c00j6y6a5e3my" path="res://Assets/throne.png" id="17_nidou"]
 [ext_resource type="Script" uid="uid://cf0dngao57b53" path="res://attack.gd" id="18_oyeur"]
-[ext_resource type="Texture2D" uid="uid://cw51urf3cnhw3" path="res://Assets/north-wall-top.png" id="20_05gxw"]
-[ext_resource type="Texture2D" uid="uid://lsreio18b5bq" path="res://Assets/east-wall-top.png" id="21_lgkxh"]
+[ext_resource type="Texture2D" uid="uid://515kr1tjn2vl" path="res://Assets/north-wall-top.png" id="20_05gxw"]
+[ext_resource type="Texture2D" uid="uid://cr7738srwgmha" path="res://Assets/east-wall-top.png" id="21_lgkxh"]
 [ext_resource type="PackedScene" uid="uid://dylrv4uv1kq2j" path="res://Home.tscn" id="22_p1mbh"]
-[ext_resource type="Texture2D" uid="uid://dm4tg5qx8qpvq" path="res://Assets/king_down_2.png" id="25_qg76h"]
-[ext_resource type="Texture2D" uid="uid://bnnpa3fbesmk6" path="res://Assets/king_down_3.png" id="26_0ldv1"]
-[ext_resource type="Texture2D" uid="uid://31njwinjkxlw" path="res://Assets/king_down_4.png" id="27_7uw6b"]
-[ext_resource type="Texture2D" uid="uid://i6xni7hyrfg" path="res://Assets/king_side_2.png" id="29_oyads"]
-[ext_resource type="Texture2D" uid="uid://kgvc6c8udnqn" path="res://Assets/king_side_3.png" id="30_rs0io"]
-[ext_resource type="Texture2D" uid="uid://ds68rj2vosalk" path="res://Assets/king_side_4.png" id="31_3pd6m"]
-[ext_resource type="Texture2D" uid="uid://d4b214tj4wkms" path="res://Assets/king_up_2.png" id="33_nidou"]
-[ext_resource type="Texture2D" uid="uid://cib4f65olmteh" path="res://Assets/king_up_3.png" id="34_aeyob"]
-[ext_resource type="Texture2D" uid="uid://nca8dwwwuvl5" path="res://Assets/king_up_4.png" id="35_b4jsb"]
-[ext_resource type="Texture2D" uid="uid://bi6sgxokmcof3" path="res://Assets/sword-swing-1.png" id="37_3pd6m"]
-[ext_resource type="Texture2D" uid="uid://damy84tfd0ut3" path="res://Assets/sword-swing-2.png" id="38_nidou"]
-[ext_resource type="Texture2D" uid="uid://dqw3v1yut4e7m" path="res://Assets/sword-swing-3.png" id="39_aeyob"]
-[ext_resource type="Texture2D" uid="uid://cbm8v37fvao4p" path="res://Assets/sword-swing-4.png" id="40_b4jsb"]
-[ext_resource type="Texture2D" uid="uid://c4qhcpkdddj5v" path="res://Assets/sword-swing-5.png" id="41_u6mkd"]
+[ext_resource type="Texture2D" uid="uid://dyt0yhmflp02f" path="res://Assets/king_down_2.png" id="25_qg76h"]
+[ext_resource type="Texture2D" uid="uid://bq874er2unw8n" path="res://Assets/king_down_3.png" id="26_0ldv1"]
+[ext_resource type="Texture2D" uid="uid://dub03u286klko" path="res://Assets/king_down_4.png" id="27_7uw6b"]
+[ext_resource type="Texture2D" uid="uid://bdbnwoixn3vay" path="res://Assets/king_side_2.png" id="29_oyads"]
+[ext_resource type="Texture2D" uid="uid://b0kwycfld0yx8" path="res://Assets/king_side_3.png" id="30_rs0io"]
+[ext_resource type="Texture2D" uid="uid://comwqfyt523a4" path="res://Assets/king_side_4.png" id="31_3pd6m"]
+[ext_resource type="Texture2D" uid="uid://dmacwa0qw5pya" path="res://Assets/king_up_2.png" id="33_nidou"]
+[ext_resource type="Texture2D" uid="uid://cb5xybo2nlcfa" path="res://Assets/king_up_3.png" id="34_aeyob"]
+[ext_resource type="Texture2D" uid="uid://d345she8m4cse" path="res://Assets/king_up_4.png" id="35_b4jsb"]
+[ext_resource type="Texture2D" uid="uid://ctj7hjjuqmqlv" path="res://Assets/sword-swing-1.png" id="37_3pd6m"]
+[ext_resource type="Texture2D" uid="uid://beqsnillgu1fc" path="res://Assets/sword-swing-2.png" id="38_nidou"]
+[ext_resource type="Texture2D" uid="uid://kj47yl0dtrcl" path="res://Assets/sword-swing-3.png" id="39_aeyob"]
+[ext_resource type="Texture2D" uid="uid://b0bgj6l03a2ky" path="res://Assets/sword-swing-4.png" id="40_b4jsb"]
+[ext_resource type="Texture2D" uid="uid://dsk6d54ggilq3" path="res://Assets/sword-swing-5.png" id="41_u6mkd"]
+[ext_resource type="Script" uid="uid://6dkp3j1xbvu4" path="res://button.gd" id="54_y5etu"]
+[ext_resource type="Script" uid="uid://dqp12r337oeox" path="res://settings.gd" id="55_87fvh"]
+[ext_resource type="Script" uid="uid://1or6u44rau47" path="res://back.gd" id="56_m700p"]
+[ext_resource type="Script" uid="uid://c0mv4crycuwda" path="res://option_button.gd" id="57_dn2p4"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_uq07v"]
 vertices = PackedVector2Array(2718, 158, 2754, 162, 2238, 162, 2626, 158, 2366, 158, 2274, 158, 2718, -34, 2718, -158, 2754, -162, 2238, -162, 2626, -158, 2274, 34, 2626, 34, 2366, 34, 2366, -34, 2626, -34, 2366, -158, 2274, -158, 2718, 34, 2274, -34, 482, -290, 482, 290, 390, 198, 390, -206, -482, -290, 218, -206, 34, 290, 218, 198, -34, 290, -218, 198, -218, -206, -390, -206, -482, 290, -390, 198, 34, 354, -34, 354)
@@ -434,6 +438,9 @@ bg_color = Color(0.31108993, 0.7071284, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xet5u"]
 bg_color = Color(0, 0, 0, 0.8)
 
+[sub_resource type="Theme" id="Theme_ihd6c"]
+default_font_size = 12
+
 [node name="EnemyLevel" type="Node2D" unique_id=1318693836]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=656136842]
@@ -561,3 +568,65 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.07058824, 0.19607843, 1)
 theme_override_font_sizes/font_size = 32
 text = "You Died"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1995931565]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1794226793]
+offset_right = 79.0
+offset_bottom = 40.0
+
+[node name="Pause Button" type="Button" parent="CanvasLayer/CenterContainer" unique_id=366946768]
+layout_mode = 2
+tooltip_text = "Press to Start!"
+theme = SubResource("Theme_ihd6c")
+theme_override_font_sizes/font_size = 15
+text = "Pause"
+icon_alignment = 1
+script = ExtResource("54_y5etu")
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer3" type="CenterContainer" parent="CanvasLayer" unique_id=757689069]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_right = 35.0
+offset_bottom = 31.0
+grow_horizontal = 2
+
+[node name="Settings" type="Label" parent="CanvasLayer/CenterContainer3" unique_id=730064467]
+layout_mode = 2
+text = "Settings
+"
+script = ExtResource("55_87fvh")
+
+[node name="CenterContainer5" type="CenterContainer" parent="CanvasLayer" unique_id=1098767019]
+offset_left = 552.0
+offset_top = 17.0
+offset_right = 597.0
+offset_bottom = 57.0
+
+[node name="Back" type="Button" parent="CanvasLayer/CenterContainer5" unique_id=1890781281]
+layout_mode = 2
+text = "Back"
+flat = true
+script = ExtResource("56_m700p")
+
+[node name="CenterContainer4" type="CenterContainer" parent="CanvasLayer" unique_id=2122756600]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -39.0
+offset_top = 40.0
+offset_right = 39.0
+offset_bottom = 83.0
+grow_horizontal = 2
+offset_transform_position = Vector2(100, 65)
+
+[node name="OptionButton" type="MenuButton" parent="CanvasLayer/CenterContainer4" unique_id=1986511118]
+layout_mode = 2
+offset_transform_position = Vector2(100, 65)
+text = "Difficulty"
+script = ExtResource("57_dn2p4")
+
+[connection signal="pressed" from="CanvasLayer/CenterContainer/Pause Button" to="CanvasLayer/CenterContainer/Pause Button" method="_on_pressed"]
