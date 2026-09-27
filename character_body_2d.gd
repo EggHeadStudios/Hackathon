@@ -7,10 +7,12 @@ const START_HEALTH = 100
 
 # global vars
 var health := 100.0
+var victory := false
 
 @export var health_bar: ProgressBar
 @export var health_label: Label
 @export var died_ui: Control
+@export var victory_ui: PanelContainer
 @export var player_sprite: Sprite2D
 @export var main_menu: PackedScene
 @export var attack_range: Area2D
@@ -46,7 +48,7 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.pause()
 		animated_sprite.frame = 0
 
-	if health > 0:
+	if health > 0 and !victory:
 		move_and_slide()
 
 func _process (delta: float) -> void:
@@ -78,3 +80,16 @@ func _died() -> void:
 	# go to main menu after 5 sec
 	await get_tree().create_timer(5.0).timeout
 	get_tree().change_scene_to_packed(main_menu)
+
+func set_victory() -> void:
+	victory = true
+	victory_ui.visible = true
+	animated_sprite.visible = false
+	health_bar.visible = false
+	if attack_range:
+		attack_range.queue_free()
+	
+	# go to main menu after 5 sec
+	await get_tree().create_timer(5.0).timeout
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://Home.tscn")
